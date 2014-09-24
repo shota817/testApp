@@ -1,5 +1,11 @@
 require 'sinatra'
+require 'erb'
 
 get '/' do
-  "Hello testApp"
+  erb :hello
+end
+
+post '/next' do
+  @name = params[:name]
+  erb :next
 end
