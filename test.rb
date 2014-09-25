@@ -1,4 +1,4 @@
-equire 'testApp'
+require 'testApp'
 
 get '/' do
   erb :index
