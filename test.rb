@@ -1,4 +1,4 @@
-require 'testApp'
+require 'sinatra'
 
 get '/' do
   erb :index
