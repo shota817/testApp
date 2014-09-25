@@ -1,12 +1,21 @@
 require 'sinatra'
+require 'erb'
 
 get '/' do
-  erb :index
+  erb :test
 end
 
-__END__
+post '/next' do
+ @name = params[:name]
+ erb :next
+end
 
-@@index
-<html><body>
- index template <br>
-</html></body>
+
+
+#__END__
+
+#@@index
+#<html><body>
+# index template <br>
+#</html></body>
+
